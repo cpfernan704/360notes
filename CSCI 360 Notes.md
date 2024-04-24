@@ -1,13 +1,3 @@
->[!todo]-  todo
->Test
-
->[!tip] tip
-
->[!Heading]- Heading
-> they've been trying to keep me down they've been trying to keep me down
-
->[!info] info
-
 # Lecture 1: Logistics, Intelligence, AI
 * AI refers to synthetic intelligence in machines and is a field of research in computer science which aims to create it, through "The study and design of intelligent agents" or "rational agents", where an intelligent agent is a system that perceives its environment and takes actions which maximize its chances of success.
 * Symbol-System Hypothesis by Newell and Simon: A physical symbol system has the necessary and sufficient means for general intelligent action.
