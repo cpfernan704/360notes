@@ -20,11 +20,9 @@ $|\{f: \mathbb{R} \rightarrow \mathbb{R}\}| = |\mathbb{R}^\mathbb{R}| \geq |\{0,
 
 
 ## Problem 4
-![[Screen Shot 2024-05-04 at 6.53.15 PM.png]]
-Proof: Given $x\notin \mathbb{Q}$, we want to show that $\forall \epsilon > 0, \exists \delta_\epsilon > 0$ such that $|x-y| < \delta_\epsilon \implies |f(y)| < \epsilon$ . $\exists N \in \mathbb{N}: \frac{1}{N} < \epsilon$ by the Archimedean property. Consider the set $A=\{a \in (0,1)\mid f(a) > \frac{1}{N}\}$ . If $a \in A:a = \frac{m}{n}$ such that $n < N$ because $f(a) = \frac{1}{ n} > \frac{1}{N}$. Note that since $a \in (0,1)$, $A = \bigcup_{n=2}^{N-1} \{\frac{1}{n} \dots , \frac{n-1}{n}\} \implies A$ is finite. Therefore, take $\delta_\epsilon = \min_{a \in A} \{|x-a|\}$. Then, if $|y-x| < \delta_\epsilon \implies y \notin A \implies |f(y)| \leq \frac{1}{N} < \epsilon$ 
+Proof: Given $x\notin \mathbb{Q}$, we want to show that $\forall \epsilon > 0, \exists \delta_\epsilon > 0$ such that $|x-y| < \delta_\epsilon \implies |f(y)| < \epsilon$ . $\exists N \in \mathbb{N}: \frac{1}{N} < \epsilon$ by the Archimedean property. Consider the set $A=\{a \in (0,1)\mid f(a) > \frac{1}{N}\}$ . If $a \in A:a = \frac{m}{n}$ such that $n < N$ because $f(a) = \frac{1}{ n} > \frac{1}{N}$. Note that since $a \in (0,1)$, $$A = \bigcup_{n=2}^{N-1} \{\frac{1}{n} \dots , \frac{n-1}{n}\} \implies A$$ is finite. Therefore, take $\delta_\epsilon = \min_{a \in A} \{|x-a|\}$. Then, if $|y-x| < \delta_\epsilon \implies y \notin A \implies |f(y)| \leq \frac{1}{N} < \epsilon$ 
 
 ## Problem 5
-![[Screen Shot 2024-05-04 at 7.12.22 PM.png]]
 Part a) ($\implies$) $\inf_{z \in E}d(x,z) = 0$. This means that $\forall \epsilon > 0, \exists z \in E: d(x,z) < \epsilon$. If $x \in E$, $\inf_{z \in E} d(x,z) \leq d(x,x) = 0$ $\implies x \in \bar{E}$. 
 $(\impliedby)$ if $x \in \bar{E} = E \cup \{ \textnormal{limit point of } E\}$ 
 $(1) x \in E \inf_{z \in E} d(x,z) \leq d(x,x) = 0$  $\implies \rho_E d(x,z) = 0 (d(x,z) \geq 0, \forall z)$ 
@@ -33,14 +31,13 @@ $(1) x \in E \inf_{z \in E} d(x,z) \leq d(x,x) = 0$  $\implies \rho_E d(x,z) = 0
 Part b) Proof: $\rho_E (x) \leq d(x,z) \forall z \in E$
 $\leq d(x,y) + d(y,z)$ by the triangle inequality
 Let $S=\{d(x,y) + d(y,z) \mid z \in E\}$
-$\rho_E$ is a lower bound of S $\implies$ $\rho_E \leq \inf_{z \in E} d(x,y) + d(y,z)$, which can be simplified to  $\rho_E (x) \leq d(x,y) + \rho_E (y)$. Then, $\rho_E (x) - \rho_E (y) \leq d(x,y).$. For the same argument, $\rho_E(y) \leq d(y,z) \forall z\in Z$
+$\rho_E$ is a lower bound of S $\implies$ $\rho_E \leq \inf_{z \in E} d(x,y) + d(y,z)$, which can be simplified to  $\rho_E (x) \leq d(x,y) + \rho_E (y)$. Then, $\rho_E (x) - \rho_E (y) \leq d(x,y)$. For the same argument, $\rho_E(y) \leq d(y,z) \forall z\in Z$
 $\leq d(y,x) + d(x,z)$
 $\implies \rho_E(y) - \rho_E(x) \leq d(x,y)$
 Therefore $|\rho_E(x) - \rho_E(y)| \leq d(x,y)$
 
 ## Problem 6
-![[Screen Shot 2024-05-04 at 7.50.04 PM.png]]
-$\rho_F$ $(x) = \inf_{z \in F} d(x,z), x \in X$, $\rho_F : X \rightarrow \mathbb{R}_{\geq 0} \rho f$ is uniformly continuous
+$\rho_F$ $(x) = \inf_{z \in F} d(x,z), x \in X$, $\rho_F : X \rightarrow$ $\mathbb{R}$ nonnegative. $\rho f$ is uniformly continuous.
 $\min \rho_F(k) \in \rho_F(k)$  by the Extreme Value Theorem because k is compact. $\rho$ is uniformly continuous $\implies$ $\rho$ is continuous. K is compact which implies that its supremum and infimum are realized.
 $B = \min \rho_F(k)$ 
 (1) $\rho_F (k) = 0$ iff $k \in \bar{F} = F$ by the last problem, which is a contradiction.
